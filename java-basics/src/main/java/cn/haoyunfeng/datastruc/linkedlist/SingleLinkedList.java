@@ -33,7 +33,7 @@ public class SingleLinkedList{
         }
     }
 
-    public class ListNode {
+    public static class ListNode {
         int val;
 
         @Getter
