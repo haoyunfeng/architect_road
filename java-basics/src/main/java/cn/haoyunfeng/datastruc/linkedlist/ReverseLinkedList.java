@@ -20,8 +20,26 @@ public class ReverseLinkedList {
             pre = current;
             current = next;
         }
+        singleLinkedList.setCurrent(head);
         return singleLinkedList;
     }
+
+    public static SingleLinkedList reverseRecursive(SingleLinkedList singleLinkedList){
+        SingleLinkedList newSingleList = new SingleLinkedList();
+        SingleLinkedList.ListNode head = reverse(null,singleLinkedList.getHead());
+        singleLinkedList.setHead(head);
+        return singleLinkedList;
+    }
+
+    public static SingleLinkedList.ListNode reverse(SingleLinkedList.ListNode pre, SingleLinkedList.ListNode current){
+        if (current == null) {
+            return pre;
+        }
+        SingleLinkedList.ListNode next = current.getNext();
+        current.setNext(pre);
+        return reverse(current,next);
+    }
+
     public static void main(String []args){
         SingleLinkedList list = new SingleLinkedList();
         for(int i=1;i<6;i++){
@@ -29,5 +47,7 @@ public class ReverseLinkedList {
         }
         System.out.println(list);
         reverseList(list);
+        reverseRecursive(list);
+
     }
 }

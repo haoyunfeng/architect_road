@@ -13,10 +13,11 @@ public class SingleLinkedList{
     @Getter
     @Setter
     private ListNode head;
+    @Setter
     private ListNode current;
     @Getter
     private int size;
-    public void addFirst(int val){
+    private void addFirst(int val){
         head = new ListNode(val);
         current = head;
         size ++;
