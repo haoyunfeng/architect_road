@@ -1,8 +1,7 @@
-package cn.haoyunfeng.architect.java.concurrent.completablefuture;
+package cn.haoyunfeng.concurrent.completablefuture;
 
 import java.util.Date;
 import java.util.concurrent.*;
-import java.util.function.Supplier;
 
 /**
  * @Description:

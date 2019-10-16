@@ -1,4 +1,4 @@
-package cn.haoyunfeng.architect.java.concurrent.completablefuture;
+package cn.haoyunfeng.concurrent.completablefuture;
 
 /**
  * @Description:

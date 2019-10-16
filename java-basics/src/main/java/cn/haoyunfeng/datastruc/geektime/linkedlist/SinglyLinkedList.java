@@ -1,4 +1,4 @@
-package cn.haoyunfeng.datastruc.linkedlist;
+package cn.haoyunfeng.datastruc.geektime.linkedlist;
 
 /**
  * 1）单链表的插入、删除、查找操作；
@@ -6,6 +6,7 @@ package cn.haoyunfeng.datastruc.linkedlist;
  *
  * Author：Zheng
  */
+
 public class SinglyLinkedList {
 
     private Node head = null;

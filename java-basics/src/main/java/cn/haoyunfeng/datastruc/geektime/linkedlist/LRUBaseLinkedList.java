@@ -1,4 +1,4 @@
-package cn.haoyunfeng.datastruc.linkedlist;
+package cn.haoyunfeng.datastruc.geektime.linkedlist;
 
 
 import java.util.Scanner;

@@ -1,4 +1,6 @@
-package cn.haoyunfeng.datastruc.array;
+package cn.haoyunfeng.datastruc.geektime.array;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * 1) 数组的插入、删除、按照下标随机访问操作；
@@ -84,11 +86,26 @@ public class Array {
     public static void main(String[] args) {
         Array array = new Array(5);
         array.printAll();
-        array.insert(0, 3);
-        array.insert(0, 4);
-        array.insert(1, 5);
-        array.insert(3, 9);
-        array.insert(3, 10);
+        new Thread(()->{
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            array.insert(0, 3);
+        }).start();
+        new Thread(()->{
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            array.insert(0, 4);
+        }).start();
+        new Thread(()->{ array.insert(0, 5); }).start();
+        new Thread(()->{ array.insert(3, 9);  }).start();
+        new Thread(()->{ array.insert(3, 10);  }).start();
+
         //array.insert(3, 11);
         array.printAll();
     }
