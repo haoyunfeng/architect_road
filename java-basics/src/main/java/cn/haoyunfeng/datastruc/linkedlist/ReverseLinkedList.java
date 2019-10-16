@@ -1,7 +1,7 @@
 package cn.haoyunfeng.datastruc.linkedlist;
 
 /**
- * @Description: 链表翻转
+ * @Description: 链表反转
  * @author: haoyunfeng
  * @Date: 2019/10/16 9:41 上午
  */
