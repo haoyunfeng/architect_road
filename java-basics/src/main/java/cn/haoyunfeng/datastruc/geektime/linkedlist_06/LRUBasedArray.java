@@ -1,4 +1,4 @@
-package cn.haoyunfeng.datastruc.geektime.linkedlist;
+package cn.haoyunfeng.datastruc.geektime.linkedlist_06;
 
 import java.util.HashMap;
 import java.util.Map;

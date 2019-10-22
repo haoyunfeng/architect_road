@@ -1,4 +1,4 @@
-package algo.lesson08;
+package cn.haoyunfeng.datastruc.geektime.stack_08;
 
 /**
  * 使用前后栈实现浏览器的前进后退。

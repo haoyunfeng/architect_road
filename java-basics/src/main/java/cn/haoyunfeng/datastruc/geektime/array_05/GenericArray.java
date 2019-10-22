@@ -1,4 +1,4 @@
-package cn.haoyunfeng.datastruc.geektime.array;
+package cn.haoyunfeng.datastruc.geektime.array_05;
 
 public class GenericArray<T> {
     private T[] data;
