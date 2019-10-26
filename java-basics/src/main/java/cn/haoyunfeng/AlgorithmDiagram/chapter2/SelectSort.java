@@ -1,4 +1,4 @@
-﻿package cn.haoyunfeng.AlgorithmDiagram.chapter2;
+package cn.haoyunfeng.AlgorithmDiagram.chapter2;
 
 /**
  * 

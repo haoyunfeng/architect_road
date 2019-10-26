@@ -1,4 +1,4 @@
-﻿package cn.haoyunfeng.AlgorithmDiagram.chapter1;
+package cn.haoyunfeng.AlgorithmDiagram.chapter1;
 
 public class BinarySearch {
 
