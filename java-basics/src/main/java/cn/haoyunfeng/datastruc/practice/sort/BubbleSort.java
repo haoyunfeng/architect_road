@@ -1,4 +1,4 @@
-package cn.haoyunfeng.datastruc.sort;
+package cn.haoyunfeng.datastruc.practice.sort;
 
 /**
  * @Description: 冒泡排序
