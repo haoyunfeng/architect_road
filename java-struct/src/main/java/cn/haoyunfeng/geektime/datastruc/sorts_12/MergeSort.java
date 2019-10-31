@@ -22,7 +22,8 @@ public class MergeSort {
     mergeSortInternally(a, q+1, r);
 
     // 将A[p...q]和A[q+1...r]合并为A[p...r]
-    merge(a, p, q, r);
+//    merge(a, p, q, r);
+    mergeBySentry(a,p,q,r);
   }
 
   private static void merge(int[] a, int p, int q, int r) {
@@ -61,9 +62,9 @@ public class MergeSort {
    * 合并(哨兵)
    *
    * @param arr
-   * @param p
-   * @param q
-   * @param r
+   * @param p 开始数组下标
+   * @param q 中间下标
+   * @param r 数组结尾下标
    */
   private static void mergeBySentry(int[] arr, int p, int q, int r) {
     int[] leftArr = new int[q - p + 2];
@@ -92,5 +93,11 @@ public class MergeSort {
         arr[k++] = rightArr[j++];
       }
     }
+  }
+
+  public static void main(String []args){
+    int[]arr = {4,5,6,3,1,2};
+    mergeSort(arr,arr.length);
+    System.out.println(arr);
   }
 }
