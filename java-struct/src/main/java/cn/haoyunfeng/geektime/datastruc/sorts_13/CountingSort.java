@@ -47,4 +47,9 @@ public class CountingSort {
     }
   }
 
+  public static void main(String []args){
+    int []array = {13,16,4,7,11,8,17,18,5,6,14,15,10,12,3,1,2,9};
+    countingSort(array,array.length);
+    System.out.println(array);
+  }
 }
